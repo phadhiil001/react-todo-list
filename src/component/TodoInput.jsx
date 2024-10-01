@@ -6,6 +6,7 @@ const TodoInput = ({handleAddTodos, todoValue, setTodoValue}) => {
         }} placeholder='Enter todo ...' />
         <button onClick={() => {
             handleAddTodos(todoValue)
+            setTodoValue('')
         }}>Add</button>
     </header>
   )
